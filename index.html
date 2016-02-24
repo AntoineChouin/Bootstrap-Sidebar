@@ -3,23 +3,27 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="">
 
-    <title>Simple Sidebar - Start Bootstrap Template</title>
+   <title>Simple Sidebar - modifié</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+   <!-- Bootstrap Core CSS -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- Custom CSS -->
+   <link href="css/simple-sidebar.css" rel="stylesheet">
+
+   <link rel="stylesheet" href="/font-awesome-4.5.0/css/font-awesome.css">
+
+   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -28,72 +32,255 @@
 
 <body>
 
-    <div id="wrapper">
+   <div id="wrapper">
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        Start Bootstrap
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Dashboard</a>
-                </li>
-                <li>
-                    <a href="#">Shortcuts</a>
-                </li>
-                <li>
-                    <a href="#">Overview</a>
-                </li>
-                <li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Simple Sidebar</h1>
-                        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-                    </div>
-                </div>
+      <!-- /#sidebar-wrapper -->
+      <nav class="navbar navbar-default  navbar-fixed-top">
+         <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>
+               <a href="#menu-toggle" class="btn btn-nav navbar-brand" id="menu-toggle">Toggle Menu <i class="fa fa-caret-square-o-right"></i></a>
+
             </div>
-        </div>
-        <!-- /#page-content-wrapper -->
 
-    </div>
-    <!-- /#wrapper -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav">
+                  <!--                  <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
+                  <li><a href="#">Link</a></li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown 
+                        <span class="caret"></span>
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                     </ul>
+                  </li>
+               </ul>
+               <br class="clearfix">
+               <aside class="nav navbar-nav navbar-right"></aside>
+               <!--
+                 <ul class="">
+                     <li>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+                        <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+                     </li>
+                     <li>
+                       <button type="button" class="btn btn-default navbar-btn">Connexion</button>
+                     </li>
+                    
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+                  </ul>
+           
+-->
 
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
+
+
+            </div>
+            <!-- /.navbar-collapse -->
+
+            <!-- Sidebar -->
+            <nav id="sidebar-wrapper">
+
+               <ul class="sidebar-nav">
+
+
+                  <li class="sidebar-brand ">
+                     <a href="#">
+                        <span> Agenda </span>
+                        <i class="fa fa-th-list"></i>
+                     </a>
+                  </li>
+
+                  <li>
+                     <a href="#">
+                        <span>Dashboard
+                           <i class="fa fa-car fa-lg"></i>
+                        </span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <i class="fa fa-ship fa-lg"></i>
+                        <span>Shortcuts</span>
+
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">Overview <i class="fa fa-motorcycle fa-lg"></i> </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                           Events <i class="fa fa-bicycle fa-lg"></i>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        About <i class="fa fa-plane fa-lg"></i>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">Services <i class="fa fa-paper-plane fa-lg"></i> </a>
+                  </li>
+                  <li class="">
+                     <a href="#">
+                        <i class="fa fa-rocket fa-lg"></i> <span>Contact</span>
+                     </a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+         <!-- /.container-fluid -->
+      </nav>
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-12">
+                  <h1>Simple Sidebar</h1>
+                  <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+                  <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+
+               </div>
+            </div>
+            <div class="row">
+               <section class="col-md-3">
+                  <p>
+                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique incidunt impedit, deleniti facere magnam vitae maxime cumque ipsum id consequuntur, dignissimos neque distinctio omnis ullam odio sunt eaque, numquam!</span>
+                     <span>Placeat voluptates hic officia numquam, dignissimos magnam omnis quasi ipsam asperiores incidunt adipisci soluta! Illum cum quis itaque, sunt est, facere cupiditate quo nam aut ratione totam aperiam doloribus optio!</span>
+                     <span>Modi deleniti autem, beatae corporis aliquid sint ut accusamus id, consequuntur. Incidunt magnam voluptatem, expedita provident aperiam temporibus nostrum! Dolores et cumque fuga optio, officia doloremque beatae nulla consequuntur ratione!</span>
+                     <span>Magni voluptate rerum praesentium inventore quis atque pariatur suscipit tenetur quae voluptates repellendus numquam assumenda, eaque reprehenderit perferendis. Culpa, modi sapiente facere iusto error voluptate est suscipit nobis, nulla fuga.</span>
+                  </p>
+                  <p>
+                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi in quos, perspiciatis exercitationem amet iure explicabo distinctio veniam, repellat vero dolore, aspernatur dolorum eaque ea quis officia. Fuga, quasi, cupiditate.</span>
+                     <span>Placeat fugiat consequatur dolores beatae animi optio, mollitia ducimus nostrum eum quisquam odit quas dicta numquam inventore magnam nemo accusantium rerum? Recusandae a veritatis voluptates repellat quod quaerat, impedit dolorem.</span>
+                     <span>Consectetur accusantium eius eveniet voluptatum voluptate nobis inventore omnis. Molestias quis consectetur, quidem a cupiditate commodi sunt quo, eaque adipisci dolorum. Maxime doloribus rem ullam adipisci enim, a sapiente voluptatem.</span>
+                     <span>Exercitationem fugiat recusandae veniam aspernatur mollitia aliquam alias incidunt accusamus aliquid, ad atque error minus rem eligendi non voluptates laboriosam sequi doloremque. Cumque, dolore obcaecati consequatur possimus laboriosam, fugit mollitia.</span>
+                  </p>
+                  <p>
+                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem iusto minus, natus, tenetur fugiat, excepturi repudiandae tempore laborum enim nemo illum explicabo rerum qui expedita. Quidem asperiores porro repellendus hic.</span>
+                     <span>Architecto rem accusantium nostrum quod vel et dolores, eveniet, error quibusdam itaque, in! Accusamus, quae nihil deserunt expedita asperiores tempora quibusdam, est unde libero tenetur quam, aspernatur qui esse repudiandae.</span>
+                     <span>Odio dolore, velit optio delectus odit ut alias consequuntur culpa similique! Veniam, minus modi, fugit repellendus sit placeat distinctio illum tempora ipsum temporibus, molestiae labore reiciendis cumque reprehenderit expedita suscipit?</span>
+                     <span>Excepturi eum accusantium nam quos, possimus consequatur distinctio mollitia voluptates doloremque rerum illum, pariatur quasi id debitis dolorum sequi in atque fugiat voluptas cumque harum explicabo optio soluta quod nisi!</span>
+                  </p>
+                  <p>
+                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem in aperiam perferendis, nulla modi dicta, voluptates incidunt. Accusantium vero, quam ipsa, neque inventore impedit et. Odit officia, eveniet sequi ratione.</span>
+                     <span>Inventore odio eligendi, quod quisquam ipsum! Incidunt libero, sequi, corporis facere dolores fuga recusandae consectetur iure non perferendis totam maiores necessitatibus placeat nemo accusamus magnam esse tenetur minima laudantium dicta.</span>
+                     <span>Vel quas deserunt tempora nam doloribus velit. Porro sint qui possimus atque ex. Temporibus quam voluptatum incidunt at consectetur odit voluptatem enim quasi voluptatibus, error iste dolores nostrum eligendi, in.</span>
+                     <span>Facilis maxime sint commodi vel, esse ex quidem asperiores ullam dolor quas voluptatem, reprehenderit facere molestiae hic sed quo porro earum eveniet nam ab obcaecati similique tempore repellat perferendis possimus.</span>
+                  </p>
+               </section>
+               <section class="col-md-3">
+
+                  <p>
+                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, error veniam numquam, dicta, molestiae rerum vero earum reiciendis aperiam dolore minus consequuntur distinctio iste voluptatibus at necessitatibus nesciunt id quaerat!</span>
+                     <span>Quasi debitis, facere veniam magni aliquam delectus alias eum assumenda fugit sint eius, sunt quis maxime. Facere, quos iusto facilis assumenda fuga et tenetur nesciunt optio, dignissimos amet, vel! Molestiae.</span>
+                     <span>Perspiciatis culpa, laudantium autem numquam quam eaque, recusandae nam voluptatibus cum quae minima veritatis, tempora! Possimus neque, autem veniam sequi beatae optio nesciunt repudiandae obcaecati, magni, recusandae repellendus quisquam voluptatibus.</span>
+                     <span>Perspiciatis fugiat tempora soluta harum doloribus, labore veritatis iure ipsam nesciunt eum corrupti, praesentium dolore laboriosam sapiente mollitia sunt magni ad. Sequi distinctio, in possimus? Ipsa vel necessitatibus ducimus earum.</span>
+                  </p>
+                  <p>
+                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugit rem quibusdam ipsum, maiores iure, iusto cupiditate nam est nostrum reiciendis officiis repudiandae distinctio tenetur deserunt dolores quisquam consequuntur quaerat.</span>
+                     <span>Reiciendis voluptatem ad aut adipisci, est nulla, nemo quo tempora possimus sunt architecto officiis vero alias, ab deleniti aperiam consequatur doloribus rerum fugit repellendus magni quam! Sed quibusdam magnam, ea!</span>
+                     <span>Voluptates perspiciatis minus doloribus autem placeat atque, cum dolorum nulla maxime porro ea ex amet magnam ut odit accusamus! Explicabo ea quod, voluptatum! Impedit ea ipsum autem fuga, dicta, dolores.</span>
+                     <span>Maiores libero sunt doloremque obcaecati possimus inventore unde illo hic, dolorem necessitatibus saepe animi, quaerat minus in ad dolore, ipsa quidem. Suscipit alias, recusandae! Fugit soluta error labore rerum quos.</span>
+                  </p>
+                  <p>
+                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, explicabo. Dolore distinctio architecto minima eveniet, deserunt cumque est nam. Ducimus officia debitis, ut dolores! Nihil numquam exercitationem eum quidem eveniet!</span>
+                     <span>Perferendis omnis fugiat delectus ullam dolores quo nulla, incidunt accusantium officia quam reprehenderit veniam id earum autem, maiores provident aliquam tempore necessitatibus expedita perspiciatis reiciendis quod ex. Atque natus, adipisci!</span>
+                     <span>Ad, dolore non autem eligendi molestias incidunt vel repellendus cum debitis illo quam, sint nihil, libero doloremque. Nobis deleniti nam optio reiciendis placeat sit rem error ex quod, eligendi voluptas.</span>
+                     <span>Ex impedit at nesciunt quam officia ea iusto voluptate ratione cupiditate commodi doloremque provident eius facere neque consectetur molestias earum, aliquid nobis, illum laborum eos. Rerum, non facere iusto provident.</span>
+                  </p>
+                  <p>
+                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, facilis consequuntur possimus officia tempore beatae itaque laborum vitae ad, repellat, omnis sed? Eligendi et architecto, quaerat repellendus, quasi fugit animi.</span>
+                     <span>Doloremque nulla debitis veritatis, accusantium atque. Sed dignissimos distinctio, quod quos laborum id sequi ipsa. Voluptatem, in corrupti neque tempora error pariatur illo deleniti aspernatur quisquam. Repudiandae sit hic, quasi!</span>
+                     <span>Voluptatem accusantium iure asperiores dicta minus vitae natus ullam ipsum amet cupiditate, magnam, harum est quis libero? Nesciunt sunt harum quos quae? Provident nobis dolor, nam voluptas repellat asperiores quisquam.</span>
+                     <span>Nam, assumenda, fuga omnis quasi modi temporibus iste voluptates vel tempora minima quam. Ipsam architecto placeat, itaque assumenda inventore asperiores unde dolore magnam deserunt mollitia possimus laudantium ut quasi ea.</span>
+                  </p>
+               </section>
+               <section class="col-md-3">
+                  <p>
+                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure assumenda explicabo error deleniti magni, laboriosam vitae suscipit alias provident cumque iusto esse? Animi asperiores excepturi, totam quaerat consequuntur nisi hic.</span>
+                     <span>Facere ratione, ex iusto at, incidunt eligendi soluta nobis quos provident reiciendis iure voluptate animi vitae optio nemo nesciunt inventore porro consequatur neque! Soluta minus maiores vel, recusandae quas libero?</span>
+                     <span>Iusto est, debitis quod eaque quos animi aliquid libero nostrum laborum asperiores esse temporibus velit autem natus provident porro odit, et, repellendus officiis praesentium, vitae iure cumque quae deserunt voluptatum?</span>
+                     <span>A vel error soluta ullam deleniti eaque laboriosam provident accusantium sunt in, nulla, sequi rem vero quas velit deserunt iusto pariatur obcaecati animi modi recusandae? Tenetur impedit voluptates recusandae exercitationem.</span>
+                  </p>
+                  <p>
+                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, tempora ducimus, ullam totam repellat iusto molestiae ex harum porro maxime molestias labore nesciunt. Repellat, nesciunt iste molestiae adipisci sed, odit.</span>
+                     <span>Eveniet possimus dolores cum ab consequuntur inventore fugit eius aliquid optio dolor excepturi, dignissimos ipsum corporis architecto saepe iusto, delectus hic nemo a cupiditate nulla sit cumque praesentium consectetur? Impedit.</span>
+                     <span>Minima distinctio error quaerat illum, vitae et nesciunt, quam laudantium deleniti voluptates officia nobis repudiandae molestiae ducimus quisquam odit qui! Explicabo enim, necessitatibus distinctio possimus nam vitae quibusdam adipisci officiis!</span>
+                     <span>Rerum voluptates molestias quis officia, fuga quod accusamus ad, adipisci in, aut, quo placeat beatae? Accusamus assumenda, voluptas atque, aspernatur eveniet minus, perspiciatis expedita autem accusantium est quidem odit. Maiores.</span>
+                  </p>
+                  <p>
+                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat esse ratione, temporibus voluptate soluta dolore sint minus saepe possimus debitis maiores at, tempora, est nam ad reprehenderit rem dolor eligendi.</span>
+                     <span>Eos ratione at unde, iste provident ex quia est dolores ullam, ipsam in quos accusamus eaque temporibus pariatur laudantium adipisci, assumenda harum ut nulla odio. Voluptatum facere quidem aperiam neque.</span>
+                     <span>Inventore unde id ut quae, provident, ea debitis fugit adipisci distinctio perferendis, voluptatibus libero quaerat molestias aspernatur, officiis esse harum quos minus corporis. Aliquam consequatur magni similique sapiente asperiores, doloremque.</span>
+                     <span>Et suscipit reprehenderit, porro tenetur illo! Nesciunt porro eius, obcaecati culpa non tenetur consequatur eum asperiores, quisquam hic dolores excepturi officiis aliquid vero inventore perspiciatis nihil consequuntur quam modi blanditiis.</span>
+                  </p>
+                  <p>
+                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero vel obcaecati, cupiditate. Consectetur, dolores corrupti temporibus dolore optio tempora hic nisi nulla, tempore sequi adipisci odio, soluta quasi porro ipsam!</span>
+                     <span>Labore obcaecati harum sequi voluptatibus minus eveniet et libero molestias veritatis fugiat quas rem tempore itaque accusamus error, delectus modi, hic voluptates architecto dolor perferendis deleniti mollitia. Repellendus, similique, molestias?</span>
+                     <span>Dolorem deserunt totam, animi possimus deleniti, ex doloremque ullam ipsam reprehenderit odit nemo libero eos quam magnam accusantium reiciendis neque molestias odio incidunt eum ab alias. Numquam consequatur dolor iste.</span>
+                     <span>Voluptate, nesciunt incidunt exercitationem distinctio laudantium illo rerum perferendis autem, aperiam sint ea, pariatur id earum at, dolore nam cum minima quasi nemo culpa commodi! Accusamus nam, illo accusantium illum.</span>
+                  </p>
+               </section>
+               <section class="col-md-3">
+                  <p>
+                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, fuga nobis expedita, recusandae magni quis eligendi nihil deserunt esse, nemo nulla. In nemo commodi unde, deleniti nisi itaque minus suscipit.</span>
+                     <span>Accusantium, reprehenderit repellat voluptate illum omnis impedit praesentium repellendus beatae corporis, maxime aliquid dolorum tempora temporibus minus voluptatum et consequatur cupiditate deserunt ipsam ab ullam voluptatem. Voluptatibus ut hic tempora.</span>
+                     <span>Nobis voluptatum officia molestiae! Asperiores dolor, minima nemo necessitatibus sapiente animi nesciunt, iste doloremque praesentium obcaecati reprehenderit hic! Sunt incidunt neque velit aspernatur odio quisquam mollitia distinctio maiores nisi cumque.</span>
+                     <span>Ullam, earum, fugiat! Voluptas veniam asperiores, architecto quod modi, quo numquam. Provident adipisci placeat ullam! Rerum laboriosam voluptatibus nihil, aliquam, ratione in commodi illum ex unde sunt ut deserunt recusandae?</span>
+                  </p>
+                  <p>
+                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, veniam? Beatae ad, nihil nam fugit tempore suscipit, quas odio repudiandae id illum. Quod ea, distinctio tempora incidunt, quasi et atque.</span>
+                     <span>Excepturi minima dolor sequi voluptatum nihil dolorum id, voluptatibus beatae. Similique, ipsa modi perspiciatis odio beatae, eius quos recusandae maiores minima eligendi, rerum provident. Distinctio reprehenderit neque itaque obcaecati ad.</span>
+                     <span>Voluptatibus cumque quo iusto accusamus, veniam id unde. Debitis neque tenetur libero cumque dolor asperiores, eaque veniam repellendus perspiciatis placeat laboriosam, temporibus architecto rem voluptas velit tempora, similique possimus sunt!</span>
+                     <span>Rem quae accusamus repellat consequatur ex excepturi illo hic molestias perferendis eum, ad, ullam quibusdam mollitia neque ab dolore, explicabo asperiores nemo suscipit voluptatum, laborum deleniti odio quidem! Numquam, voluptatum.</span>
+                  </p>
+                  <p>
+                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, temporibus ducimus at corporis modi aspernatur veniam quasi nostrum, vitae quos ipsum nobis amet aut quo iusto numquam? Quam, corporis, amet.</span>
+                     <span>Reprehenderit ratione expedita dolores libero quidem maiores maxime tempora animi modi. Quidem minus amet neque, deserunt eius non, possimus repellendus sunt vitae, aperiam quos necessitatibus aliquid beatae velit qui sequi.</span>
+                     <span>Necessitatibus incidunt esse beatae provident repellendus libero sapiente quod enim deleniti rerum maxime deserunt asperiores sint magni quibusdam, tempora odit facilis dolor nesciunt unde quam rem officia, accusamus eveniet! Animi.</span>
+                     <span>Itaque expedita, dignissimos consequatur libero deserunt, similique ab, sint earum cum maxime, sapiente necessitatibus laudantium illo quia repellendus. Sapiente, quibusdam nemo numquam adipisci totam quisquam provident dolor unde assumenda porro.</span>
+                  </p>
+                  <p>
+                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero et cupiditate beatae quos, debitis. Tenetur, distinctio eaque. Voluptatibus vitae qui est at odio sunt incidunt, consectetur, asperiores quas ipsa sit!</span>
+                     <span>Rem eligendi unde eaque, ut ullam saepe pariatur cupiditate nulla, est quasi temporibus ipsam laboriosam eius fuga inventore at facilis, mollitia vel voluptates ducimus, dolores iusto ex repellendus quam. Voluptatum.</span>
+                     <span>Expedita hic eligendi unde animi ipsum, alias atque minus tempore dolorum, veritatis perspiciatis vitae distinctio nesciunt quo libero magnam vel non. Molestiae temporibus quos aperiam laboriosam nemo optio debitis, consequatur.</span>
+                     <span>Eum quia soluta reiciendis, porro est quod, nesciunt, enim odio ea assumenda iusto commodi nulla magni voluptatem saepe delectus possimus maiores laborum optio sit, aspernatur nihil harum ad totam. Officia!</span>
+                  </p>
+               </section>
+            </div>
+         </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+
+   </div>
+   <!-- /#wrapper -->
+
+   <!-- jQuery -->
+   <script src="js/jquery.js"></script>
+
+   <!-- Bootstrap Core JavaScript -->
+   <script src="js/bootstrap.min.js"></script>
+
+   <!-- Menu Toggle Script -->
+   <script src="js/app.js">
+
+
+   </script>
 
 </body>
 
