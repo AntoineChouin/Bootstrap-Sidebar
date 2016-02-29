@@ -14,10 +14,6 @@
       });
    });
 
-//   $("#menu-toggle").click(function () {
-//      $('#menu-toggle i').removeClass("fa-caret-square-o-right");
-//      $("#menu-toggle i").addClass("fa-caret-square-o-left");
-//   });
  $("#menu-toggle").click(function () {
       $('#menu-toggle i').toggleClass("fa-caret-square-o-right fa-caret-square-o-left");
 //      $("#menu-toggle i").addClass("");
